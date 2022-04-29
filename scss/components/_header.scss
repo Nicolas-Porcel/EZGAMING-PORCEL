@@ -1,0 +1,60 @@
+/*--------- HEADER ---------*/
+.header{
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    &_container{
+        background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../../images/background/vanguard-banner.png);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 25vh;
+        .header_titulo{
+            background: none;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+            &_resaltado{
+                background: none;
+                text-transform: uppercase;
+                color: rgb(0, 252, 180);
+            }
+        }
+    }
+    &_nav{
+        &_menu{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            .nav_item{
+                width: fit-content;
+                .nav_link{
+                    text-decoration: none;
+                    width: min-content;
+                    color: black;
+                    font-weight: bold;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: blue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 390px){
+    .header{
+        &_container{
+            height: 20vh;
+            .header_titulo{
+                padding: 0.5rem 0rem 0.5rem 0.5rem;
+                font-size: large;
+                &_resaltado{
+                    font-size: larger;
+                }
+            }
+        }
+    }
+}
