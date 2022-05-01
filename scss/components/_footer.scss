@@ -1,1 +1,81 @@
 /*--------- FOOTER ---------*/
+.footer{
+    padding: 2rem;
+    text-align: center;
+    background: rgb(12, 12, 12);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .titulo_footer{
+        font-style: italic;
+        font-weight: lighter;
+    }
+    &_nav{
+        .footer_menu{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            .f-nav_item{
+                .f-nav_link{
+                    img{
+                        width: 3rem;
+                    }
+                }
+            }
+        }
+    }
+    .contacto_footer{
+        font-weight: lighter;
+        font-size: x-large;
+        a{
+            font-weight: bold;
+            color: burlywood;
+            text-transform: uppercase;
+            text-decoration: none;
+            &:hover{
+                color: rgb(90, 45, 225);
+            }
+        }
+    }
+    .creditos_footer{
+        font-weight: lighter;
+        span{
+            font-weight: normal;
+            color: rgb(90, 45, 225);
+        }
+    }
+}
+
+@media(max-width:780px){
+    .footer{
+        padding: 1rem;
+        &_nav{
+            .footer_menu{
+                gap: 2rem;
+                .f-nav_item{
+                    .f-nav_link{
+                        img{
+                            width: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .contacto_footer{
+            width: 80%;
+            font-size: large;
+        }
+    }
+}
+
+@media(max-width:390px){
+    .footer{
+        padding: 0.5rem;
+        .contacto_footer{
+            width: 90%;
+            font-size: medium;
+        }
+    }
+}

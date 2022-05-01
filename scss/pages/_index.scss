@@ -1,0 +1,61 @@
+/*--------- INDEX ---------*/
+$backgrounds:(nosotros: noxus-bg, coaching: demacia-bg, guia: shurima-bg);
+.main{
+    .secciones-inicio{
+        height: 100vh;
+        padding-left: 1rem;
+        .titulo-seccion-inicio{
+            font-weight: lighter;
+            font-style: italic;
+        }
+        .descripcion-seccion-inicio{
+            width: 50%;
+            p{
+                color: whitesmoke;
+                font-size: x-large;
+                font-weight: lighter;
+            }
+        }
+        .boton-seccion-inicio{
+            a{
+                border-top-right-radius: 0%;
+                border-bottom-left-radius: 0%;
+            }
+        }
+    }
+    @each $seccion, $bg in $backgrounds {
+        #seccion-inicio-#{$seccion}{
+            background-image:linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../../images/background/#{$bg}.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+
+@media(max-width:780px){
+    .main{
+        .secciones-inicio{
+            .descripcion-seccion-inicio{
+                width: 80%;
+                p{
+                    font-size: larger;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }   
+}
+
+@media(max-width:390px){
+    .main{
+        .secciones-inicio{
+            height: 80vh;
+            .descripcion-seccion-inicio{
+                width: 90%;
+                p{
+                    font-size: large;
+                }
+            }
+        }
+    }
+}

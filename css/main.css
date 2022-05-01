@@ -1,51 +1,159 @@
 * {
   padding: 0%;
-  margin: 0%;
-  background-color: whitesmoke; }
+  margin: 0%; }
 
 /*--------- HEADER ---------*/
 .header {
   position: sticky;
   top: 0%;
-  z-index: 1000; }
-  .header_container {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/background/vanguard-banner.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 25vh; }
-    .header_container .header_titulo {
-      background: none;
-      text-align: center;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      color: white; }
-      .header_container .header_titulo_resaltado {
-        background: none;
-        text-transform: uppercase;
-        color: #00fcb4; }
-  .header_nav_menu {
-    list-style: none;
-    display: flex;
-    justify-content: space-around; }
-    .header_nav_menu .nav_item {
-      width: fit-content; }
-      .header_nav_menu .nav_item .nav_link {
+  z-index: 1000;
+  background: #0c0c0c;
+  display: flex;
+  align-items: center; }
+  .header_container .header_titulo {
+    font-weight: lighter;
+    font-style: italic;
+    color: whitesmoke; }
+    .header_container .header_titulo_resaltado {
+      text-transform: uppercase;
+      font-style: normal;
+      font-weight: normal;
+      color: #8700ff; }
+  .header_nav {
+    width: 70%;
+    padding-top: 1rem; }
+    .header_nav .header_menu {
+      list-style: none;
+      display: flex;
+      justify-content: space-around; }
+      .header_nav .header_menu .nav_item .nav_link {
         text-decoration: none;
-        width: min-content;
-        color: black;
+        font-size: large;
         font-weight: bold;
-        transition: all 0.5s; }
-        .header_nav_menu .nav_item .nav_link:hover {
-          color: blue; }
+        color: whitesmoke; }
+        .header_nav .header_menu .nav_item .nav_link:hover {
+          color: #8700ff; }
+
+@media (max-width: 780px) {
+  .header {
+    flex-direction: column; }
+    .header_nav {
+      width: 100%; }
+      .header_nav .header_menu .nav_item .nav_link {
+        font-size: medium; } }
 
 @media (max-width: 390px) {
-  .header_container {
-    height: 20vh; }
-    .header_container .header_titulo {
-      padding: 0.5rem 0rem 0.5rem 0.5rem;
-      font-size: large; }
-      .header_container .header_titulo_resaltado {
-        font-size: larger; } }
+  .header {
+    position: initial; }
+    .header_nav {
+      width: 100%; }
+      .header_nav .header_menu {
+        flex-direction: column;
+        align-items: center; }
+        .header_nav .header_menu .nav_item {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          border-bottom: 1px solid whitesmoke; }
+          .header_nav .header_menu .nav_item .nav_link {
+            color: whitesmoke; } }
 
 /*--------- FOOTER ---------*/
+.footer {
+  padding: 2rem;
+  text-align: center;
+  background: #0c0c0c;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .footer .titulo_footer {
+    font-style: italic;
+    font-weight: lighter; }
+  .footer_nav .footer_menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 3rem; }
+    .footer_nav .footer_menu .f-nav_item .f-nav_link img {
+      width: 3rem; }
+  .footer .contacto_footer {
+    font-weight: lighter;
+    font-size: x-large; }
+    .footer .contacto_footer a {
+      font-weight: bold;
+      color: burlywood;
+      text-transform: uppercase;
+      text-decoration: none; }
+      .footer .contacto_footer a:hover {
+        color: #5a2de1; }
+  .footer .creditos_footer {
+    font-weight: lighter; }
+    .footer .creditos_footer span {
+      font-weight: normal;
+      color: #5a2de1; }
+
+@media (max-width: 780px) {
+  .footer {
+    padding: 1rem; }
+    .footer_nav .footer_menu {
+      gap: 2rem; }
+      .footer_nav .footer_menu .f-nav_item .f-nav_link img {
+        width: 2rem; }
+    .footer .contacto_footer {
+      width: 80%;
+      font-size: large; } }
+
+@media (max-width: 390px) {
+  .footer {
+    padding: 0.5rem; }
+    .footer .contacto_footer {
+      width: 90%;
+      font-size: medium; } }
+
+/*--------- INDEX ---------*/
+.main .secciones-inicio {
+  height: 100vh;
+  padding-left: 1rem; }
+  .main .secciones-inicio .titulo-seccion-inicio {
+    font-weight: lighter;
+    font-style: italic; }
+  .main .secciones-inicio .descripcion-seccion-inicio {
+    width: 50%; }
+    .main .secciones-inicio .descripcion-seccion-inicio p {
+      color: whitesmoke;
+      font-size: x-large;
+      font-weight: lighter; }
+  .main .secciones-inicio .boton-seccion-inicio a {
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%; }
+
+.main #seccion-inicio-nosotros {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../../images/background/noxus-bg.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.main #seccion-inicio-coaching {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../../images/background/demacia-bg.jpg);
+  background-size: cover;
+  background-position: center; }
+
+.main #seccion-inicio-guia {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../../images/background/shurima-bg.jpg);
+  background-size: cover;
+  background-position: center; }
+
+@media (max-width: 780px) {
+  .main .secciones-inicio .descripcion-seccion-inicio {
+    width: 80%; }
+    .main .secciones-inicio .descripcion-seccion-inicio p {
+      font-size: larger;
+      font-weight: lighter; } }
+
+@media (max-width: 390px) {
+  .main .secciones-inicio {
+    height: 80vh; }
+    .main .secciones-inicio .descripcion-seccion-inicio {
+      width: 90%; }
+      .main .secciones-inicio .descripcion-seccion-inicio p {
+        font-size: large; } }
