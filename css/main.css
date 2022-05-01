@@ -42,7 +42,7 @@
       .header_nav .header_menu .nav_item .nav_link {
         font-size: medium; } }
 
-@media (max-width: 390px) {
+@media (max-width: 600px) {
   .header {
     position: initial; }
     .header_nav {
@@ -129,17 +129,17 @@
     border-bottom-left-radius: 0%; }
 
 .main #seccion-inicio-nosotros {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../../images/background/noxus-bg.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../images/background/noxus-bg.jpg);
   background-size: cover;
   background-position: center; }
 
 .main #seccion-inicio-coaching {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../../images/background/demacia-bg.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../images/background/demacia-bg.jpg);
   background-size: cover;
   background-position: center; }
 
 .main #seccion-inicio-guia {
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../../images/background/shurima-bg.jpg);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../images/background/shurima-bg.jpg);
   background-size: cover;
   background-position: center; }
 

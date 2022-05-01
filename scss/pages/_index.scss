@@ -25,7 +25,7 @@ $backgrounds:(nosotros: noxus-bg, coaching: demacia-bg, guia: shurima-bg);
     }
     @each $seccion, $bg in $backgrounds {
         #seccion-inicio-#{$seccion}{
-            background-image:linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../../images/background/#{$bg}.jpg);
+            background-image:linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../images/background/#{$bg}.jpg);
             background-size: cover;
             background-position: center;
         }
