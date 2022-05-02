@@ -63,14 +63,11 @@
             .header_menu{
                 flex-direction: column;
                 align-items: center;
+                gap: 0.5rem;
                 .nav_item{
-                    display: flex;
-                    justify-content: center;
-                    width: 100%;
+                    width: 80%;
+                    text-align: center;
                     border-bottom: 1px solid burlywood;
-                    .nav_link{
-                        color: burlywood;
-                    }
                 }
             }
         }

@@ -45,14 +45,12 @@
     position: initial; }
     .header_nav .header_menu {
       flex-direction: column;
-      align-items: center; }
+      align-items: center;
+      gap: 0.5rem; }
       .header_nav .header_menu .nav_item {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        border-bottom: 1px solid whitesmoke; }
-        .header_nav .header_menu .nav_item .nav_link {
-          color: whitesmoke; } }
+        width: 80%;
+        text-align: center;
+        border-bottom: 1px solid burlywood; } }
 
 /*--------- FOOTER ---------*/
 .footer {
