@@ -34,7 +34,7 @@
         .header_nav .header_menu .nav_item .nav_link:hover {
           color: #8700ff; }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .header {
     flex-direction: column; }
     .header_nav .header_menu .nav_item .nav_link {
@@ -87,7 +87,7 @@
       font-weight: normal;
       color: #5a2de1; }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
   .footer {
     padding: 1rem; }
     .footer_nav .footer_menu {
@@ -106,50 +106,150 @@
       font-size: medium; } }
 
 /*--------- INDEX ---------*/
-.main .secciones-inicio {
+#index_main .secciones-inicio {
   height: 75ch;
   padding-left: 1rem; }
-  .main .secciones-inicio .titulo-seccion-inicio {
+  #index_main .secciones-inicio .titulo-seccion-inicio {
     font-weight: lighter;
     font-style: italic; }
-  .main .secciones-inicio .descripcion-seccion-inicio {
+  #index_main .secciones-inicio .descripcion-seccion-inicio {
     width: 50%; }
-    .main .secciones-inicio .descripcion-seccion-inicio p {
+    #index_main .secciones-inicio .descripcion-seccion-inicio p {
       color: whitesmoke;
       font-size: x-large;
       font-weight: lighter; }
-  .main .secciones-inicio .boton-seccion-inicio a {
+  #index_main .secciones-inicio .boton-seccion-inicio a {
     border-top-right-radius: 0%;
     border-bottom-left-radius: 0%; }
 
-.main #seccion-inicio-nosotros {
+#index_main #seccion-inicio-nosotros {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../images/background/noxus-bg.jpg);
   background-size: cover;
   background-position: center; }
 
-.main #seccion-inicio-coaching {
+#index_main #seccion-inicio-coaching {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../images/background/demacia-bg.jpg);
   background-size: cover;
   background-position: center; }
 
-.main #seccion-inicio-guia {
+#index_main #seccion-inicio-guia {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 45%, rgba(0, 0, 0, 0.1)), url(../images/background/shurima-bg.jpg);
   background-size: cover;
   background-position: center; }
 
-@media (max-width: 780px) {
-  .main .secciones-inicio {
+@media (max-width: 800px) {
+  #index_main .secciones-inicio {
     height: 66ch; }
-    .main .secciones-inicio .descripcion-seccion-inicio {
+    #index_main .secciones-inicio .descripcion-seccion-inicio {
       width: 80%; }
-      .main .secciones-inicio .descripcion-seccion-inicio p {
+      #index_main .secciones-inicio .descripcion-seccion-inicio p {
         font-size: larger;
         font-weight: lighter; } }
 
 @media (max-width: 390px) {
-  .main .secciones-inicio {
+  #index_main .secciones-inicio {
     height: 57ch; }
-    .main .secciones-inicio .descripcion-seccion-inicio {
+    #index_main .secciones-inicio .descripcion-seccion-inicio {
       width: 90%; }
-      .main .secciones-inicio .descripcion-seccion-inicio p {
+      #index_main .secciones-inicio .descripcion-seccion-inicio p {
         font-size: large; } }
+
+/*--------- NOSOTROS ---------*/
+#nosotros_main {
+  background-color: black; }
+  #nosotros_main .articulo-nosotros {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    background-color: black; }
+    #nosotros_main .articulo-nosotros .titulo-nosotros {
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      font-weight: lighter;
+      font-style: italic;
+      text-transform: uppercase;
+      color: crimson; }
+    #nosotros_main .articulo-nosotros .fila-nosotros {
+      padding: 1rem;
+      display: flex;
+      align-items: center; }
+      #nosotros_main .articulo-nosotros .fila-nosotros .imagen-nosotros {
+        width: 45%; }
+      #nosotros_main .articulo-nosotros .fila-nosotros .descripcion-nosotros {
+        width: 55%;
+        padding: 1rem;
+        font-size: large;
+        color: burlywood; }
+  #nosotros_main #seccion-preguntas {
+    background: whitesmoke; }
+    #nosotros_main #seccion-preguntas #imagen-seccion-preguntas img {
+      width: 100%; }
+    #nosotros_main #seccion-preguntas #titulo-preguntas {
+      background: #d8d8d8;
+      padding: 1rem;
+      font-weight: lighter;
+      font-style: italic;
+      text-transform: uppercase;
+      color: indigo; }
+    #nosotros_main #seccion-preguntas .listado-preguntas {
+      padding: 1rem;
+      list-style: none;
+      background: #3c3c3c; }
+      #nosotros_main #seccion-preguntas .listado-preguntas li {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        #nosotros_main #seccion-preguntas .listado-preguntas li h3 {
+          width: 100%;
+          text-align: center;
+          padding: 0.5rem;
+          border-radius: 0.5rem;
+          background: rgba(0, 0, 0, 0.6);
+          font-weight: lighter;
+          font-style: italic;
+          text-transform: uppercase;
+          color: crimson; }
+        #nosotros_main #seccion-preguntas .listado-preguntas li p {
+          text-align: center;
+          width: 90%;
+          color: whitesmoke;
+          font-size: large; }
+  #nosotros_main #articulo-nosotros-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/about/mobile_esports_team.jpg);
+    background-size: cover;
+    background-position: center; }
+  #nosotros_main #articulo-nosotros-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/about/infinity_esports.jpg);
+    background-size: cover;
+    background-position: center; }
+
+@media (max-width: 800px) {
+  #nosotros_main .articulo-nosotros {
+    padding-top: 0;
+    padding-bottom: 0; }
+    #nosotros_main .articulo-nosotros .fila-nosotros {
+      flex-direction: column; }
+      #nosotros_main .articulo-nosotros .fila-nosotros .imagen-nosotros {
+        width: 80%; }
+      #nosotros_main .articulo-nosotros .fila-nosotros .descripcion-nosotros {
+        width: 100%;
+        text-align: center; } }
+
+@media (max-width: 400px) {
+  #nosotros_main .articulo-nosotros .fila-nosotros {
+    padding: 0.5rem; }
+    #nosotros_main .articulo-nosotros .fila-nosotros .imagen-nosotros {
+      width: 100%; }
+    #nosotros_main .articulo-nosotros .fila-nosotros .descripcion-nosotros {
+      padding: 0.5rem;
+      font-size: medium; }
+  #nosotros_main .listado-preguntas {
+    padding: 0.5rem; }
+    #nosotros_main .listado-preguntas li {
+      padding: 0.5rem; }
+      #nosotros_main .listado-preguntas li h3 {
+        font-size: large; }
+      #nosotros_main .listado-preguntas li p {
+        font-size: medium; } }

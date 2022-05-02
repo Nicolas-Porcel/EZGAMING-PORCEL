@@ -1,6 +1,6 @@
 /*--------- INDEX ---------*/
 $backgrounds:(nosotros: noxus-bg, coaching: demacia-bg, guia: shurima-bg);
-.main{
+#index_main{
     .secciones-inicio{
         height: 75ch;
         padding-left: 1rem;
@@ -32,8 +32,8 @@ $backgrounds:(nosotros: noxus-bg, coaching: demacia-bg, guia: shurima-bg);
     }
 }
 
-@media(max-width:780px){
-    .main{
+@media(max-width:800px){
+    #index_main{
         .secciones-inicio{
             height: 66ch;
             .descripcion-seccion-inicio{
@@ -48,7 +48,7 @@ $backgrounds:(nosotros: noxus-bg, coaching: demacia-bg, guia: shurima-bg);
 }
 
 @media(max-width:390px){
-    .main{
+    #index_main{
         .secciones-inicio{
             height: 57ch;
             .descripcion-seccion-inicio{
