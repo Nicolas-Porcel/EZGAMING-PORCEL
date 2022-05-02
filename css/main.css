@@ -13,14 +13,14 @@
   .header_container .header_titulo {
     font-weight: lighter;
     font-style: italic;
-    color: whitesmoke; }
+    color: burlywood; }
     .header_container .header_titulo_resaltado {
       text-transform: uppercase;
       font-style: normal;
       font-weight: normal;
       color: #8700ff; }
   .header_nav {
-    width: 70%;
+    width: 100%;
     padding-top: 1rem; }
     .header_nav .header_menu {
       list-style: none;
@@ -30,33 +30,29 @@
         text-decoration: none;
         font-size: large;
         font-weight: bold;
-        color: whitesmoke; }
+        color: burlywood; }
         .header_nav .header_menu .nav_item .nav_link:hover {
           color: #8700ff; }
 
 @media (max-width: 780px) {
   .header {
     flex-direction: column; }
-    .header_nav {
-      width: 100%; }
-      .header_nav .header_menu .nav_item .nav_link {
-        font-size: medium; } }
+    .header_nav .header_menu .nav_item .nav_link {
+      font-size: medium; } }
 
-@media (max-width: 600px) {
+@media (max-width: 390px) {
   .header {
     position: initial; }
-    .header_nav {
-      width: 100%; }
-      .header_nav .header_menu {
-        flex-direction: column;
-        align-items: center; }
-        .header_nav .header_menu .nav_item {
-          display: flex;
-          justify-content: center;
-          width: 100%;
-          border-bottom: 1px solid whitesmoke; }
-          .header_nav .header_menu .nav_item .nav_link {
-            color: whitesmoke; } }
+    .header_nav .header_menu {
+      flex-direction: column;
+      align-items: center; }
+      .header_nav .header_menu .nav_item {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-bottom: 1px solid whitesmoke; }
+        .header_nav .header_menu .nav_item .nav_link {
+          color: whitesmoke; } }
 
 /*--------- FOOTER ---------*/
 .footer {
@@ -113,7 +109,7 @@
 
 /*--------- INDEX ---------*/
 .main .secciones-inicio {
-  height: 100vh;
+  height: 75ch;
   padding-left: 1rem; }
   .main .secciones-inicio .titulo-seccion-inicio {
     font-weight: lighter;
@@ -144,15 +140,17 @@
   background-position: center; }
 
 @media (max-width: 780px) {
-  .main .secciones-inicio .descripcion-seccion-inicio {
-    width: 80%; }
-    .main .secciones-inicio .descripcion-seccion-inicio p {
-      font-size: larger;
-      font-weight: lighter; } }
+  .main .secciones-inicio {
+    height: 66ch; }
+    .main .secciones-inicio .descripcion-seccion-inicio {
+      width: 80%; }
+      .main .secciones-inicio .descripcion-seccion-inicio p {
+        font-size: larger;
+        font-weight: lighter; } }
 
 @media (max-width: 390px) {
   .main .secciones-inicio {
-    height: 80vh; }
+    height: 57ch; }
     .main .secciones-inicio .descripcion-seccion-inicio {
       width: 90%; }
       .main .secciones-inicio .descripcion-seccion-inicio p {

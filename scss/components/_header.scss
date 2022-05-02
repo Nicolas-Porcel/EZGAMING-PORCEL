@@ -10,7 +10,7 @@
         .header_titulo{
             font-weight: lighter;
             font-style: italic;
-            color: whitesmoke;
+            color: burlywood;
             &_resaltado{
                 text-transform: uppercase;
                 font-style: normal;
@@ -20,7 +20,7 @@
         }
     }
     &_nav{
-        width: 70%;
+        width: 100%;
         padding-top: 1rem;
         .header_menu{
             list-style: none;
@@ -31,7 +31,7 @@
                     text-decoration: none;
                     font-size: large;
                     font-weight: bold;
-                    color: whitesmoke;
+                    color: burlywood;
                     &:hover{
                         color: rgb(135, 0, 255);
                     }
@@ -45,7 +45,6 @@
     .header{
         flex-direction: column;
         &_nav{
-            width: 100%;
             .header_menu{
                 .nav_item{
                     .nav_link{
@@ -61,7 +60,6 @@
     .header{
         position: initial;
         &_nav{
-            width: 100%;
             .header_menu{
                 flex-direction: column;
                 align-items: center;

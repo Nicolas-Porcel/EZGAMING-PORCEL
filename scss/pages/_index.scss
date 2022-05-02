@@ -2,7 +2,7 @@
 $backgrounds:(nosotros: noxus-bg, coaching: demacia-bg, guia: shurima-bg);
 .main{
     .secciones-inicio{
-        height: 100vh;
+        height: 75ch;
         padding-left: 1rem;
         .titulo-seccion-inicio{
             font-weight: lighter;
@@ -35,6 +35,7 @@ $backgrounds:(nosotros: noxus-bg, coaching: demacia-bg, guia: shurima-bg);
 @media(max-width:780px){
     .main{
         .secciones-inicio{
+            height: 66ch;
             .descripcion-seccion-inicio{
                 width: 80%;
                 p{
@@ -49,7 +50,7 @@ $backgrounds:(nosotros: noxus-bg, coaching: demacia-bg, guia: shurima-bg);
 @media(max-width:390px){
     .main{
         .secciones-inicio{
-            height: 80vh;
+            height: 57ch;
             .descripcion-seccion-inicio{
                 width: 90%;
                 p{
