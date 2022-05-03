@@ -1,4 +1,5 @@
 /*--------- INDEX ---------*/
+/*utilizo un map para aplicar un each en mis secciones de inicio*/
 $backgrounds:(nosotros: noxus-bg, coaching: demacia-bg, guia: shurima-bg);
 #index_main{
     .secciones-inicio{
@@ -47,7 +48,7 @@ $backgrounds:(nosotros: noxus-bg, coaching: demacia-bg, guia: shurima-bg);
     }   
 }
 
-@media(max-width:390px){
+@media(max-width:400px){
     #index_main{
         .secciones-inicio{
             height: 57ch;

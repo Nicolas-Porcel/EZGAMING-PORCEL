@@ -1,4 +1,11 @@
 /*--------- NOSOTROS ---------*/
+/*utilizare un extend con esta clase para mis titulos*/
+.titulo{
+    font-weight: lighter;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
 #nosotros_main{
     background-color: black;
     .articulo-nosotros{
@@ -6,11 +13,9 @@
         padding-bottom: 6rem;
         background-color: black;
         .titulo-nosotros{ 
-            background: rgba(0, 0, 0, 0.6);
+            @extend .titulo;
             padding: 1rem;
-            font-weight: lighter;
-            font-style: italic;
-            text-transform: uppercase;
+            background: rgba(0, 0, 0, 0.6);
             color: crimson;
         }
         .fila-nosotros{
@@ -36,11 +41,9 @@
             }
         }
         #titulo-preguntas{ 
-            background: rgb(216, 216, 216);
+            @extend .titulo;
             padding: 1rem;
-            font-weight: lighter;
-            font-style: italic;
-            text-transform: uppercase;
+            background: rgb(216, 216, 216);
             color: indigo;
         }
         .listado-preguntas{
@@ -56,13 +59,11 @@
                 justify-content: center;
                 h3{
                     width: 100%;
+                    @extend .titulo;
                     text-align: center;
                     padding: 0.5rem;
                     border-radius: 0.5rem;
                     background: rgba(0, 0, 0, 0.6);
-                    font-weight: lighter;
-                    font-style: italic;
-                    text-transform: uppercase;
                     color: crimson;
                 }
                 p{

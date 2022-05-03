@@ -1,0 +1,132 @@
+/*--------- COACHING ---------*/
+/*uso un map y un mixin para generar el estilo de mis cursos dentro de un each*/
+$cursos:(curso-1:rgba(255, 255, 0, 0.6), curso-2:rgba(255, 166, 0, 0.6), curso-3:rgba(220, 20, 60, 0.6));
+@mixin curso($area, $color){
+    grid-area: $area; 
+    border: 1px solid $color;
+    .curso_titulo{
+        color: $color;
+    }
+    .curso_boton{
+        background-color: $color;
+    }
+}
+
+#coaching_main{
+    background: black;
+    #encabezado-coach{
+        height: 75ch;
+        padding-top: 5rem;
+        background: black;
+        background-image:linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/background/eye_of_ra-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        .titulo-coach{
+            padding: 1rem;
+            font-weight: lighter;
+            font-style: italic;
+            text-transform: uppercase;
+            background: rgba(0, 0, 0, 0.6);
+            color: rgb(255, 255, 0);
+        }
+        .descripcion-coach{
+            padding: 2rem;
+            padding-top: 6rem;
+            color: white;
+            font-size: large;
+        }
+    }
+    #seccion-cursos{
+        background-image:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background/eye_of_ra-bg.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding: 1rem;
+        .curso{
+            margin-top: 3rem;
+            padding: 1rem;
+            background-color: rgb(24, 24, 24);
+            border-top-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            &_titulo{
+                font-weight: lighter;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            &_precio{
+                color: burlywood;
+                .resaltado-precio{
+                    font-weight: lighter;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    color: grey;
+                }
+            }
+            &_descripcion{
+                font-weight: bold;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: grey;
+            }
+            &_contenido{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                li{
+                    color: burlywood;
+                    margin-top: 0.5rem;
+                }
+            }
+            &_boton{
+                color: white;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+        @each $curso_num, $curso_color in $cursos {
+            ##{$curso_num}{
+                @include curso("#{$curso_num}", #{$curso_color});
+            }    
+        }
+    }
+}
+@media(max-width:800px){
+    #coaching_main{
+        #encabezado-coach{
+            padding: 0;
+            height: 66ch;
+            .descripcion-coach{
+                font-size: large;
+            }
+        }
+    }   
+}
+
+@media(max-width:400px){
+    #coaching_main{
+        #encabezado-coach{
+            height: fit-content;
+            .descripcion-coach{
+                padding: 0%;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                font-size: medium;
+            }
+        }
+        #seccion-cursos{
+            .curso{
+                border-top-left-radius: 0.5rem;
+                border-bottom-right-radius: 0.5rem;
+                &_titulo{
+                    font-size: large;
+                }
+                &_precio{
+                    font-size: x-large;
+                }
+            }
+        }
+    }
+}

@@ -40,7 +40,7 @@
     .header_nav .header_menu .nav_item .nav_link {
       font-size: medium; } }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .header {
     position: initial; }
     .header_nav .header_menu {
@@ -98,7 +98,7 @@
       width: 80%;
       font-size: large; } }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .footer {
     padding: 0.5rem; }
     .footer .contacto_footer {
@@ -106,6 +106,7 @@
       font-size: medium; } }
 
 /*--------- INDEX ---------*/
+/*utilizo un map para aplicar un each en mis secciones de inicio*/
 #index_main .secciones-inicio {
   height: 75ch;
   padding-left: 1rem; }
@@ -146,7 +147,7 @@
         font-size: larger;
         font-weight: lighter; } }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   #index_main .secciones-inicio {
     height: 57ch; }
     #index_main .secciones-inicio .descripcion-seccion-inicio {
@@ -155,6 +156,12 @@
         font-size: large; } }
 
 /*--------- NOSOTROS ---------*/
+/*utilizare un extend con esta clase para mis titulos*/
+.titulo, #nosotros_main .articulo-nosotros .titulo-nosotros, #nosotros_main #seccion-preguntas #titulo-preguntas, #nosotros_main #seccion-preguntas .listado-preguntas li h3 {
+  font-weight: lighter;
+  font-style: italic;
+  text-transform: uppercase; }
+
 #nosotros_main {
   background-color: black; }
   #nosotros_main .articulo-nosotros {
@@ -162,11 +169,8 @@
     padding-bottom: 6rem;
     background-color: black; }
     #nosotros_main .articulo-nosotros .titulo-nosotros {
-      background: rgba(0, 0, 0, 0.6);
       padding: 1rem;
-      font-weight: lighter;
-      font-style: italic;
-      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.6);
       color: crimson; }
     #nosotros_main .articulo-nosotros .fila-nosotros {
       padding: 1rem;
@@ -184,11 +188,8 @@
     #nosotros_main #seccion-preguntas #imagen-seccion-preguntas img {
       width: 100%; }
     #nosotros_main #seccion-preguntas #titulo-preguntas {
-      background: #d8d8d8;
       padding: 1rem;
-      font-weight: lighter;
-      font-style: italic;
-      text-transform: uppercase;
+      background: #d8d8d8;
       color: indigo; }
     #nosotros_main #seccion-preguntas .listado-preguntas {
       padding: 1rem;
@@ -207,9 +208,6 @@
           padding: 0.5rem;
           border-radius: 0.5rem;
           background: rgba(0, 0, 0, 0.6);
-          font-weight: lighter;
-          font-style: italic;
-          text-transform: uppercase;
           color: crimson; }
         #nosotros_main #seccion-preguntas .listado-preguntas li p {
           text-align: center;
@@ -253,3 +251,113 @@
         font-size: large; }
       #nosotros_main .listado-preguntas li p {
         font-size: medium; } }
+
+/*--------- COACHING ---------*/
+/*uso un map y un mixin para generar el estilo de mis cursos dentro de un each*/
+#coaching_main {
+  background: black; }
+  #coaching_main #encabezado-coach {
+    height: 75ch;
+    padding-top: 5rem;
+    background: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/background/eye_of_ra-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; }
+    #coaching_main #encabezado-coach .titulo-coach {
+      padding: 1rem;
+      font-weight: lighter;
+      font-style: italic;
+      text-transform: uppercase;
+      background: rgba(0, 0, 0, 0.6);
+      color: yellow; }
+    #coaching_main #encabezado-coach .descripcion-coach {
+      padding: 2rem;
+      padding-top: 6rem;
+      color: white;
+      font-size: large; }
+  #coaching_main #seccion-cursos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background/eye_of_ra-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 1rem; }
+    #coaching_main #seccion-cursos .curso {
+      margin-top: 3rem;
+      padding: 1rem;
+      background-color: #181818;
+      border-top-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start; }
+      #coaching_main #seccion-cursos .curso_titulo {
+        font-weight: lighter;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+      #coaching_main #seccion-cursos .curso_precio {
+        color: burlywood; }
+        #coaching_main #seccion-cursos .curso_precio .resaltado-precio {
+          font-weight: lighter;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          color: grey; }
+      #coaching_main #seccion-cursos .curso_descripcion {
+        font-weight: bold;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: grey; }
+      #coaching_main #seccion-cursos .curso_contenido {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; }
+        #coaching_main #seccion-cursos .curso_contenido li {
+          color: burlywood;
+          margin-top: 0.5rem; }
+      #coaching_main #seccion-cursos .curso_boton {
+        color: white;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 0; }
+    #coaching_main #seccion-cursos #curso-1 {
+      grid-area: "curso-1";
+      border: 1px solid rgba(255, 255, 0, 0.6); }
+      #coaching_main #seccion-cursos #curso-1 .curso_titulo {
+        color: rgba(255, 255, 0, 0.6); }
+      #coaching_main #seccion-cursos #curso-1 .curso_boton {
+        background-color: rgba(255, 255, 0, 0.6); }
+    #coaching_main #seccion-cursos #curso-2 {
+      grid-area: "curso-2";
+      border: 1px solid rgba(255, 166, 0, 0.6); }
+      #coaching_main #seccion-cursos #curso-2 .curso_titulo {
+        color: rgba(255, 166, 0, 0.6); }
+      #coaching_main #seccion-cursos #curso-2 .curso_boton {
+        background-color: rgba(255, 166, 0, 0.6); }
+    #coaching_main #seccion-cursos #curso-3 {
+      grid-area: "curso-3";
+      border: 1px solid rgba(220, 20, 60, 0.6); }
+      #coaching_main #seccion-cursos #curso-3 .curso_titulo {
+        color: rgba(220, 20, 60, 0.6); }
+      #coaching_main #seccion-cursos #curso-3 .curso_boton {
+        background-color: rgba(220, 20, 60, 0.6); }
+
+@media (max-width: 800px) {
+  #coaching_main #encabezado-coach {
+    padding: 0;
+    height: 66ch; }
+    #coaching_main #encabezado-coach .descripcion-coach {
+      font-size: large; } }
+
+@media (max-width: 400px) {
+  #coaching_main #encabezado-coach {
+    height: fit-content; }
+    #coaching_main #encabezado-coach .descripcion-coach {
+      padding: 0%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-size: medium; }
+  #coaching_main #seccion-cursos .curso {
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem; }
+    #coaching_main #seccion-cursos .curso_titulo {
+      font-size: large; }
+    #coaching_main #seccion-cursos .curso_precio {
+      font-size: x-large; } }
