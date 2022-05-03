@@ -359,3 +359,93 @@
       font-size: large; }
     #coaching_main #seccion-cursos .curso_precio {
       font-size: x-large; } }
+
+/*#######################################*/
+/*-- GUIA_HTML MAIN --*/
+/*utilizo un map para generar los backgrounds de los carriles*/
+#guia_main {
+  background: #181818; }
+  #guia_main .guia_intro {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/background/zed-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 5rem; }
+    #guia_main .guia_intro .titulo_guia {
+      width: 100%; }
+      #guia_main .guia_intro .titulo_guia h2 {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 1rem;
+        font-weight: lighter;
+        font-style: italic; }
+    #guia_main .guia_intro .articulo_intro .descripcion-intro {
+      width: 80%;
+      transition: all 0.5s; }
+      #guia_main .guia_intro .articulo_intro .descripcion-intro:hover {
+        background: linear-gradient(rgba(6, 9, 51, 0.9), rgba(6, 9, 51, 0.9));
+        border-radius: 1rem; }
+  #guia_main #menu-guia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #guia_main #menu-guia li {
+      transition: all 0.1s; }
+      #guia_main #menu-guia li:hover {
+        background-color: blue; }
+  #guia_main #elegir-campeon .carriles-campeones .carril {
+    display: flex;
+    align-items: center; }
+    #guia_main #elegir-campeon .carriles-campeones .carril .imagen-carril {
+      width: 50%; }
+      #guia_main #elegir-campeon .carriles-campeones .carril .imagen-carril img {
+        width: 100%; }
+    #guia_main #elegir-campeon .carriles-campeones .carril .container-carril {
+      width: 50%; }
+      #guia_main #elegir-campeon .carriles-campeones .carril .container-carril .titulo-carril {
+        background: rgba(0, 0, 0, 0.6); }
+      #guia_main #elegir-campeon .carriles-campeones .carril .container-carril .descripcion-carril {
+        transition: all 0.5s;
+        border-radius: 1rem; }
+        #guia_main #elegir-campeon .carriles-campeones .carril .container-carril .descripcion-carril:hover {
+          background: rgba(0, 0, 0, 0.6); }
+  #guia_main #elegir-campeon .carriles-campeones #top {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/background/darius-bg-2.jpg);
+    background-size: cover; }
+  #guia_main #elegir-campeon .carriles-campeones #jungla {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/background/jarvan-bg.jpg);
+    background-size: cover; }
+  #guia_main #elegir-campeon .carriles-campeones #mid {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/background/akali-bg.jpg);
+    background-size: cover; }
+  #guia_main #elegir-campeon .carriles-campeones #supp {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/background/braum-bg.jpg);
+    background-size: cover; }
+  #guia_main #elegir-campeon .carriles-campeones #adc {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../images/background/miss_fortune-bg.jpg);
+    background-size: cover; }
+
+@media (max-width: 800px) {
+  #guia_main .guia_intro {
+    padding-top: 0; }
+    #guia_main .guia_intro .articulo_intro .descripcion-intro {
+      margin: 0% !important;
+      padding: 1rem !important;
+      width: 90% !important; }
+  #guia_main #elegir-campeon .carriles-campeones .carril {
+    flex-direction: column;
+    justify-content: center; }
+    #guia_main #elegir-campeon .carriles-campeones .carril .imagen-carril {
+      width: 80%; }
+      #guia_main #elegir-campeon .carriles-campeones .carril .imagen-carril img {
+        width: 100%; }
+    #guia_main #elegir-campeon .carriles-campeones .carril .container-carril {
+      width: 80%; } }
+
+@media (max-width: 400px) {
+  #guia_main {
+    background: #181818; }
+    #guia_main .guia_intro .articulo_intro .descripcion-intro {
+      margin: 0% !important;
+      padding: 1rem !important;
+      width: 100% !important; } }
