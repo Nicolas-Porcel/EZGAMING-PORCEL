@@ -23,6 +23,8 @@ $cursos:(curso-1:rgba(255, 255, 0, 0.6), curso-2:rgba(255, 166, 0, 0.6), curso-3
         padding-top: 5rem;
         background: rgba(0, 0, 0, 0.8);
         .titulo-coach{
+            width: 100%;
+            height: fit-content;
             padding: 1rem;
             font-weight: lighter;
             font-style: italic;
@@ -32,7 +34,7 @@ $cursos:(curso-1:rgba(255, 255, 0, 0.6), curso-2:rgba(255, 166, 0, 0.6), curso-3
         }
         .descripcion-coach{
             padding: 2rem;
-            padding-top: 6rem;
+            padding-top: 4rem;
             color: white;
             font-size: large;
         }
