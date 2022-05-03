@@ -255,15 +255,15 @@
 /*--------- COACHING ---------*/
 /*uso un map y un mixin para generar el estilo de mis cursos dentro de un each*/
 #coaching_main {
-  background: black; }
+  background: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background/eye_of_ra-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
   #coaching_main #encabezado-coach {
     height: 75ch;
     padding-top: 5rem;
-    background: black;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../images/background/eye_of_ra-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; }
+    background: rgba(0, 0, 0, 0.8); }
     #coaching_main #encabezado-coach .titulo-coach {
       padding: 1rem;
       font-weight: lighter;
@@ -277,10 +277,6 @@
       color: white;
       font-size: large; }
   #coaching_main #seccion-cursos {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/background/eye_of_ra-bg.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     padding: 1rem; }
     #coaching_main #seccion-cursos .curso {
       margin-top: 3rem;
