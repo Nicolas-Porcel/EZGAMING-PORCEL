@@ -436,9 +436,9 @@
     flex-direction: column;
     justify-content: center; }
     #guia_main #elegir-campeon .carriles-campeones .carril .imagen-carril {
-      width: 80%; }
+      width: 80% !important; }
       #guia_main #elegir-campeon .carriles-campeones .carril .imagen-carril img {
-        width: 100%; }
+        width: 100% !important; }
     #guia_main #elegir-campeon .carriles-campeones .carril .container-carril {
       width: 80%; } }
 

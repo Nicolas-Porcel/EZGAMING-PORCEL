@@ -101,9 +101,9 @@ $carriles:(
                     flex-direction: column;
                     justify-content: center;
                     .imagen-carril{
-                        width: 80%;
+                        width: 80% !important;
                         img{
-                            width: 100%;
+                            width: 100% !important;
                         }
                     }
                     .container-carril{
